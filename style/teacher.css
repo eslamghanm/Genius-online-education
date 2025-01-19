@@ -1,26 +1,27 @@
 
 .teacher-banner {
      /* background-color: brown; */
-    min-height: 80vh;
+    min-height: 60vh;
    
-  
+  overflow: hidden;
    
  }
- .teacher-banner .container {
-    min-height:57VH;
+ .teacher-banner .container:nth-of-type(1) {
+    min-height:50VH;
 /* background-color: brown; */
 position: relative;
 display: flex;
 justify-content: space-between;
-overflow-x: hidden;
+
 align-items: flex-end;
 padding-block:4em ;
 
  }
 .teacher-banner-content{
-    
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: .8em;
 width:40% ;
 
@@ -30,7 +31,7 @@ width:40% ;
     font-size: 1.125em;
 }
 .teacher-banner-content h2{
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 700;
 }
 .teacher-banner-content h2 span:nth-of-type(1){
@@ -81,7 +82,11 @@ width:40% ;
  
 }
 .teachers-card-header{
-   width: 40%;
+   width: 100%;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: flex-end;
 }
 .teachers-card-header h3 {
     color: var(--primary-color);
@@ -100,18 +105,28 @@ width:40% ;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
-.teachers-card-header h4{
-    font-size: 3em;
+.teachers-card-header-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.teachers-card-header-content h4{
+    Font-size: 4em;
     font-weight: 700;
     line-height: 1.5em;
 }
-.teachers-card-header h4{
+.teachers-card-header-content h4{
     color: var(--primary-color);
 }
 
 
-.teachers-card-header h4 span:nth-of-type(3){
+.teachers-card-header-content h4 span:nth-of-type(3){
     color: var(--yellow-color);
 }
 .teacher-cards-contianer{
@@ -164,7 +179,7 @@ width: 30%;
     
    color: var(--primary-color);
     font-weight: 700;
-    font-size: 3em;
+    font-size: 4em;
 }
 .teacher-details-card-info h4{
    color: #686868;
@@ -233,6 +248,39 @@ border-top-left-radius: .8em;
     font-size: 1em;
 }
 /* MEDIA QUERIES */
+@media (min-width: 1920px) {
+    .instructor-banner{
+        height: 28em;
+    }
+    .teacher-banner {
+       
+        min-height:40vh;
+     
+       
+     }
+     .teacher-banner .container:nth-of-type(1){
+         min-height: 40vh;
+         width: 100%;
+       
+     }
+}
+@media (min-width: 1650px) {
+    .instructor-banner{
+        height: 24em;
+    }
+    .teacher-banner {
+       
+        min-height: 55vh;
+     
+       
+     }
+     .teacher-banner .container:nth-of-type(1){
+         min-height: 55vh;
+         width: 100%;
+       
+     }
+}
+
 @media (max-width:1024px){
     .teacher-banner .container{
         flex-direction: column;

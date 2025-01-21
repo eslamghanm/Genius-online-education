@@ -1,6 +1,7 @@
 .goals {
 }
 .goals .section-header-container {
+    
     display: flex;
     align-items: flex-end;
     gap: 2.5em;
@@ -171,7 +172,7 @@
     flex-wrap: wrap;
     gap: 1em;
 }
-.course-card {
+.courses-card {
     border-radius: 0.8em;
     overflow: hidden;
     width: calc((100% - 3em) / 4);
@@ -218,11 +219,15 @@
 
 /* start testmoinal  */
 .testmoinal .section-header-container {
+    width: 100%;
     display: flex;
     gap: 2.5em;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
+}
+.testmoinal .section-header{
+    width: fit-content;
 }
 .testmoinal-container {
     margin-top: 2.5em;
@@ -272,7 +277,7 @@
 .instructors-image img {
     position: absolute;
     width: 100%;
-    height: 14em;
+    height: 110%;
     object-fit: contain;
     bottom: 0;
 }
@@ -355,9 +360,12 @@
 @media (max-width: 1251px) {
     .course-card,
     .instructor-card {
-        width: calc((100% - 2em) / 3);
+        width: calc((100% - 2em) / 2);
     }
 }
+
+
+
 @media (max-width: 1024px) {
     .goals-container-service {
         gap: 3em;
@@ -386,10 +394,7 @@
     .testmoinal-card:nth-of-type(odd) {
         display: none;
     }
-    .testmoinal-card,
-    .instructor-card {
-        width: 100%;
-    }
+   
     .ads-container {
         flex-direction: column;
         gap: 1.5em;
@@ -416,15 +421,22 @@
         top: -4em;
     }
     .ads-arrow{
-        position: absolute;
+    position: absolute;
     left: -2em;
     width: 5em;
     top: 50%;
     transform: translateY(-123%);
-    }
+    -webkit-transform: translateY(-123%);
+    -moz-transform: translateY(-123%);
+    -ms-transform: translateY(-123%);
+    -o-transform: translateY(-123%);
+}
 }
 
 @media (max-width: 768px) {
+    .courses-card{
+        width: calc((100% - 1em) / 2);
+    }
     .course-card {
         width: 100%;
     }
@@ -434,5 +446,125 @@
     .course-card img {
         object-fit: cover;
         object-position: top center;
+    }
+     .testmoinal-card,
+    .instructor-card {
+
+        width: 100%;
+        padding-block: 1em;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .goals-container-service {
+        gap: 1.5em;
+    }
+    .goals-container-service-image,
+    .goals-container-service-faqs {
+        width: 100%;
+    }
+    .goals-container-service-image {
+        order: -1;
+    }
+    .goals-results-container {
+        flex-wrap: wrap;
+    }
+    .results {
+        width: 100%!important;
+    }
+    .courses {
+        gap: 1em;
+    }
+    .courses-btn button {
+        padding: 1em 2em;
+    }
+    .instructors-container {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .instructors-image {
+        height: 12em;
+    }
+    .instructors-content {
+        padding: 1em;
+    }
+
+    .testmoinal-card {
+        width: 100%;
+    }
+    .testmoinal-card:nth-of-type(odd) {
+        display: none;
+    }
+    .testmoinal-container {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    .ads-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .ads-image {
+        width: 100%;
+        height: fit-content;
+        transform: translateY(60px);
+        -webkit-transform: translateY(60px);
+        -moz-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+        -o-transform: translateY(60px);
+}
+    .ads-image img:not(.ads-arrow, .ads-paper) {
+        /* background: red; */
+        /* pos */
+        position: static;
+        height: 10em;
+        /* height: 100%; */
+    }
+    .ads-paper:nth-of-type(2) {
+        top: -7em;
+        left: -2em;
+    }
+    .ads-paper:nth-of-type(3) {
+        right: -1em;
+        top: -3em;
+    }
+  
+}
+
+@media (max-width: 320px) {
+    .goals-container-service {
+        gap: 1em;
+    }
+    .goals-container-service-image,
+    .goals-container-service-faqs {
+        width: 100%;
+    }
+    .goals-container-service-image {
+        order: -1;
+    }
+    .goals-results-container {
+        flex-wrap: wrap;
+    }
+    .results {
+        width: 100%!important;
+    }
+    .courses {
+        gap: 0.5em;
+    }
+    .courses-btn button {
+        padding: 1em 1.5em;
+    }
+    .instructors-container {
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+    .instructors-image {
+        height: 8em;
+    }
+    .instructors-content {
+        padding: 1em;
+    }
+    .courses-card{
+        width: 100%;
     }
 }

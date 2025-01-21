@@ -1,5 +1,5 @@
 .hero-banner {
-    min-height:80vh;
+  height: fit-content;
     /* background: red;
     position: relative; */
 
@@ -8,7 +8,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 75vh;
+   
     padding-block: 3em;
     gap: 2em;
    

@@ -48,6 +48,8 @@ width:40% ;
    position: absolute;
    left: -8em;
 }
+
+    
 .instructor-banner .card{
     width:40%;
     height:100%;
@@ -191,11 +193,27 @@ width: 30%;
 }
 
 .side-card-contianer{
- 
+ position: relative;
   
 width: 20%;
 
 }
+.side-card-contianer::after{
+    content: "";
+    position: absolute;
+    bottom: -1em;
+    z-index: 2222;
+    height:2em;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .6);
+    box-shadow:10px 0px 10px rgba(255, 255, 255, .6);
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+}
+
 .teacher-side-card{
     margin-bottom: 1em;
     display: flex;

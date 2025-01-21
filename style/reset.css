@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "IBM Plex Sans Arabic", serif;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 html{
     scroll-behavior: smooth;

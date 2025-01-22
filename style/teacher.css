@@ -205,13 +205,9 @@ width: 20%;
     z-index: 2222;
     height:2em;
     width: 100%;
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .8);
     box-shadow:10px 0px 10px rgba(255, 255, 255, .6);
-    border-radius:50% ;
-    -webkit-border-radius:50% ;
-    -moz-border-radius:50% ;
-    -ms-border-radius:50% ;
-    -o-border-radius:50% ;
+  
 }
 
 .teacher-side-card{

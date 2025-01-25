@@ -364,7 +364,8 @@
     border-radius: 0.8em;
     border: 0;
     font-weight: 700;
-    cursor: pointer;
+ 
+
 }
 @media (min-width: 1440px){
     .goals-container-service-image{

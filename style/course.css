@@ -157,6 +157,12 @@ padding-right: 1em;}
 .courses-sitebar-courses-details-rate-note p span:nth-of-type(2){
    font-weight: 300;
 }
+.courses-sitebar-courses-details-rate-note .icon i{
+    color: #F5A805;
+}
+.courses-sitebar-courses-details-rate-note p:nth-of-type(1) span:nth-of-type(1){
+    color: #F5A805;
+}
 .courses-sidebar-courses-details-rate .check span {
     color: var(--green-color);
 }
@@ -749,6 +755,19 @@ display: flex !important;
 
 /*media quiry */
 
+@media screen and (max-width: 1024px){
+    .diploma-instructor-item{
+width:calc(100% / 3 - 1em) ;
+    }
+    .diploma-instructor-item:nth-of-type(3){
+        position: static;
+
+    }
+    .diploma-instructor-content ::after{
+        width: 0;
+              }
+}
+
 @media screen and (max-width: 768px){
     .course .container{
       flex-wrap: wrap;
@@ -768,22 +787,17 @@ display: flex !important;
         font-size: 1.5em;
         margin-block: 1em;
       }
-
-    
+  
       
-      .diploma-instructor-item{
-        
-        margin-block: 1em;
-        width: 85%;
-        margin-right: auto;
-       
-      }
-.diploma-instructor-item:not(:nth-of-type(1)){
-display: none;
-}
+
 }  
 
 @media screen and (max-width: 480px){
+  
+
+.diploma-instructor-item:not(:nth-of-type(1)){
+display: none;
+}
     .diploma-benfit-content{
         flex-basis:100%;
        

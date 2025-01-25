@@ -98,10 +98,12 @@ color: var(--orange-color);
     -ms-transition: all .4s ease;
     -o-transition: all .4s ease;
 }
+
 .navbar-btns a:nth-of-type(2):hover{
     color: var(--white-color);
     background: var(--orange-color);
 }
+
 .navbar-barIcon {
     cursor: pointer;
     display: none;

@@ -1,0 +1,128 @@
+.cart-header .container{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 90%;
+    margin:auto ;
+}
+.cart-title h2 span{
+    font-size: 2em;
+    font-weight: 700;
+
+}
+.cart-title h2 span:nth-of-type(1){
+    color: var(--primary-color);
+}
+.cart-title h2 span:nth-of-type(2){
+    color: var(--orange-color);
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:1em ;
+    -webkit-border-radius:1em ;
+    -moz-border-radius:1em ;
+    -ms-border-radius:1em ;
+    -o-border-radius:1em ;
+    overflow:hidden ;
+    background-color: #F5F5F5;
+    height:auto;
+
+}
+.cart-image{
+    background-image: url(../assets/images/cart-image.png);
+    width: 50%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  
+}
+.cart-details{
+    width: 50%;
+    padding: 4em;
+}
+.cart-details{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.cart-details h3 span{
+    font-size: 2em;
+    font-weight:700;
+    color: var(--primary-color);
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: #686868;
+}
+.option p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.option p:nth-of-type(2){
+    color: var(--primary-color);
+}
+.option svg{
+ 
+   font-size: 1em;
+
+}
+.option p:nth-of-type(5) span{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.cart-header .container .btn{
+    background-color: var(--orange-color);
+    border: none;
+    padding: .8em ;
+    border-radius: 3em;
+    width: 100%;
+    text-align: center;
+    -webkit-border-radius: 3em;
+    -moz-border-radius: 3em;
+    -ms-border-radius: 3em;
+    -o-border-radius: 3em;
+    cursor: pointer;
+    color: white;
+    font-size:1.4em ;
+    transition:.4s all ease ;
+    -webkit-transition:.4s all ease ;
+    -moz-transition:.4s all ease ;
+    -ms-transition:.4s all ease ;
+    -o-transition:.4s all ease ;
+}
+.cart-header .container .btn:hover{
+background-color: #ff9a00; 
+}
+/*MEDIA QUIRIES */
+
+@media screen and (max-width: 1024px){
+   
+    .cart-info{
+height:auto ;   
+ }
+    .cart-image {
+        height: 30em;
+        width: 100%;
+    }
+    .cart-details{
+        width: 100%;
+    }
+    .cart-header .container{
+        gap:3em ;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .cart-details{
+        padding: 2em;
+    } 
+}

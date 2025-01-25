@@ -20,7 +20,13 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
+        <div class="arrow-up">
+            <a href="#header">
+                <i class="fas fa-angle-up"></i>
+            </a>
+        </div>
+        </div>
         <div class="topbar">
             <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -47,10 +53,9 @@
                     <a href="./about-us.html">من نحن!</a>
                 </ul>
                 <div class="navbar-btns">
-                    
+
                     <a href="./contact.html"> اكتشف الآن</a>
                     <a href="./contact.html">تسجيل دخول</a>
-               
                 </div>
                 <div class="navbar-barIcon">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px"
@@ -63,26 +68,40 @@
             </div>
         </nav>
         <section class="teacher-banner ">
+            <a href="./cart.html" class="cart-icon">
+                        
+                <i class="fas fa-cart-plus"></i>
+            </a>
             <div class="container ">
-                <div class="teacher-banner-content">
-                    <h2> <span>نخبــــــــة </span> <span>نفتخــــــر بـــــــها</span></h2>
-                    <p>منصة تعليمية إلكترونية متخصصة في تعليم الصغار والنشئ أخلاقيًا، وعلميًا، مهاريًا.نوظف التكنولوجيا
-                        في خدمة صغارنا من تجربة تعلم ممتعة. نشاركك الرحلة مع طفلك لنصنع معًا إنسان سويّ ومتوازن في جميع
-                        جوانب حياته.</p>
-                    <div class="hero-banner-content-btns">
-                        <a href="./courses.html">كورستنا</a>
-                        <a href="./about-us.html">من نحن</a>
+                <div class="teacher-banner-header">
+                    <div class="teacher-banner-content">
+                        <h2> <span>نخبــــــــة </span> <span>نفتخــــــر بـــــــها</span></h2>
+                        <p>منصة تعليمية إلكترونية متخصصة في تعليم الصغار والنشئ أخلاقيًا، وعلميًا، مهاريًا.نوظف التكنولوجيا
+                            في خدمة صغارنا من تجربة تعلم ممتعة. نشاركك الرحلة مع طفلك لنصنع معًا إنسان سويّ ومتوازن في جميع
+                            جوانب حياته.</p>
+                        <div class="hero-banner-content-btns">
+                            <a href="./courses.html">كورستنا</a>
+                            <a href="./about-us.html">من نحن</a>
+                        </div>
                     </div>
-                </div>
-                <div class="instructor-banner">
-                    <div class="card">
-                        <img src="./assets/images/instructor.png" alt="Teacher 1">
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/instructor2.png" alt="Teacher 2">
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/instructor3.png" alt="Teacher 3">
+                    <div class="instructor-banner">
+                        <div class="card">
+                            <div class="image">
+                                <img src="./assets/images/instructor.png" alt="Teacher 1">
+                            </div>
+                        </div>
+                        <div class="card">
+    
+                            <div class="image">
+                                <img src="./assets/images/instructor2.png" alt="Teacher 2">
+    
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./assets/images/instructor3.png" alt="Teacher 3">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,7 +117,7 @@
         </div>
     </header>
     <main>
-        <section class="teachers-card py">
+        <section class="teachers-card p-top">
             <div class="container">
                 <div class="teachers-card-header">
                     <div class="teachers-card-header-arrow">
@@ -113,12 +132,12 @@
                     </div>
                     <div class="teachers-card-header-content">
                         <h3>معلمونا المميزون </h3>
-                    <h4>
-                        <span>نخبة من سادة</span>
-                        <br>
-                        <span>تعليم الاطفال </span>
-                        <span>في الوطن العربي</span>
-                    </h4>
+                        <h4>
+                            <span>نخبة من سادة</span>
+                            <br>
+                            <span>تعليم الاطفال </span>
+                            <span>في الوطن العربي</span>
+                        </h4>
                     </div>
                 </div>
                 <div class="teacher-cards-contianer">
@@ -142,43 +161,44 @@
                         </div>
                     </div>
                     <div class="side-card-contianer">
-                        <div class="teacher-side-card">
-                            <div class="side-card-teacher-image">
-                                <img src="assets/images/instructor.png" alt="teacher1">
+                        <div class="overflow">
+                            <div class="teacher-side-card">
+                                <div class="side-card-teacher-image">
+                                    <img src="assets/images/instructor.png" alt="teacher1">
+
+                                </div>
+                                <div class="teacher-side-card-info">
+                                    <h3>
+                                        محمد عبد الحميد
+                                    </h3>
+                                    <h4>معلم متخصص في تعليم اللغة الانجليزية للاطفال</h4>
+                                </div>
+                            </div>
+                            <div class="teacher-side-card">
+                                <div class="side-card-teacher-image">
+                                    <img src="assets/images/instructor2.png" alt="teacher2">
+
+                                </div>
+                                <div class="teacher-side-card-info">
+                                    <h3>
+                                        سماح السيوفي
+                                    </h3>
+                                    <h4 >معلمة متخصص في تعليم البرمجة البسطة والمتقدمة للاطفال </h4>
+                                </div>
 
                             </div>
-                            <div class="teacher-side-card-info">
-                                <h3>
-                                    محمد عبد الحميد
-                                </h3>
-                                <h4>معلم متخصص في تعليم اللغة الانجليزية للاطفال</h4>
-                            </div>
-                        </div>
-                        <div class="teacher-side-card">
-                            <div class="side-card-teacher-image">
-                                <img src="assets/images/instructor2.png" alt="teacher2">
+                            <div class="teacher-side-card">
+                                <div class="side-card-teacher-image">
+                                    <img src="assets/images/instructor3.png" alt="teacher3">
+
+                                </div>
+                                <div class="teacher-side-card-info">
+                                    <h3>راشد السعيد
+                                    </h3>
+                                    <h4 > معلم متخصص في تعليم اللغة الانجليزية للاطفال</h4>
+                                </div>
 
                             </div>
-                            <div class="teacher-side-card-info">
-                                <h3>
-                                    محمد عبد الحميد
-                                </h3>
-                                <h4>معلم متخصص في تعليم اللغة الانجليزية للاطفال</h4>
-                            </div>
-
-                        </div>
-                        <div class="teacher-side-card">
-                            <div class="side-card-teacher-image">
-                                <img src="assets/images/instructor3.png" alt="teacher3">
-
-                            </div>
-                            <div class="teacher-side-card-info">
-                                <h3>
-                                    محمد عبد الحميد
-                                </h3>
-                                <h4>معلم متخصص في تعليم اللغة الانجليزية للاطفال</h4>
-                            </div>
-
                         </div>
                     </div>
 
@@ -215,40 +235,40 @@
                         </div>
                         <div class="footer-contact">
                             <p>
-                                <i class="fas fa-location-arrow"></i>
+                                <i class="fas fa-location-dot"></i>
                                 <span>العنوان</span>
                             </p>
                             <p>
-                                <i class="fas fa-location-arrow"></i>
-                                <span>العنوان</span>
+                                <i class="fas fa-phone"></i>
+                                <span>01000000043</span>
                             </p>
                             <p>
-                                <i class="fas fa-location-arrow"></i>
-                                <span>العنوان</span>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>info@websites.com</span>
                             </p>
                         </div>
                         <div class="footer-social">
                             <i class="fab fa-twitter"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-linkedin"></i>
                         </div>
                     </div>
                     <div class="footer-top-links">
-                        <h3>الذهاب</h3>
+                        <h3>اريد الذهاب الي</h3>
                         <a href="#">الخصومات</a>
-                        <a href="#">التواصل السريع!</a>
-                        <a href="#">التواصل السريع!</a>
                         <a href="#">التقديم</a>
+
+                        <a href="#"> التواصل السريع!</a>
+                       
                         <a href="#">الوظائف</a>
                     </div>
                     <div class="footer-top-links">
                         <h3>القائمة الرئيسية</h3>
-                        <a href="#">الخصومات</a>
-                        <a href="#">التواصل السريع!</a>
-                        <a href="#">التواصل السريع!</a>
-                        <a href="#">التقديم</a>
-                        <a href="#">الوظائف</a>
+                        <a href="./index.html">الرئيسية</a>
+                        <a href="./courses.html">الكورسات</a>
+                        <a href="./about-us.html">من نحن</a>
+                        <a href="./contact.html">تواصل معنا</a>
                     </div>
                 </div>
                 <div class="footer-bottom">

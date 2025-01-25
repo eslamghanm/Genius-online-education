@@ -1,0 +1,103 @@
+.cart-icon{
+ position: fixed;
+ z-index:100000 ;
+ top: 50%;
+ left: 0em ;
+ transform:translateX(30%) ;
+ width: 4em;
+ height: 4em;
+ border-radius:50% ;
+ -webkit-border-radius:50% ;
+ -moz-border-radius:50% ;
+ -ms-border-radius:50% ;
+ -o-border-radius:50% ;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: white;
+ -webkit-transform:translateX(30%) ;
+ -moz-transform:translateX(30%) ;
+ -ms-transform:translateX(30%) ;
+ -o-transform:translateX(30%) ;
+ transition: all 0.3s ease-in-out;
+   
+  
+ -webkit-transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -ms-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
+}
+.cart-icon i{
+    color: var(--orange-color);
+    font-size: 1.6em;
+    transition: all 0.3s ease-in-out;
+   
+  
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+ .cart-icon:hover{
+    background-color: var(--orange-color);
+  
+}
+ .cart-icon:hover i{
+    color: white;
+}
+/* arrow up */
+.arrow-up{
+    position: fixed;
+    bottom: 3em;
+    right: 1em;
+    width: 3em;
+    height: 3em;
+    background-color:white;
+    color: var(--orange-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+   
+  
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.arrow-up i{
+    color: var(--orange-color);
+    font-size: 2em;
+    transition: all 0.3s ease-in-out;
+   
+  
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.arrow-up:hover{
+    background-color: var(--orange-color);
+  
+}
+ .arrow-up:hover i{
+    color: white;
+}
+
+@media (min-width: 1920px) {
+    .arrow-up{
+        width: 4em;
+        height: 4em;
+    }
+
+.cart-icon{
+        width: 4em;
+        height: 4em;
+    }
+}
+

@@ -1,0 +1,233 @@
+.check-out .container{
+    display: flex;
+    gap:1em ;
+    flex-wrap: wrap;
+}
+
+.check-out-info{
+    width: 70%;
+   display: flex;
+    flex-direction: column;
+    gap:2em ;
+}
+.check-out-info .header span:nth-of-type(1){
+    font-weight: 700;
+    font-size: 1.3em;
+    color: var(--primary-color);
+
+}
+.check-out-info .header span:nth-of-type(2){
+    font-weight: 700;
+    font-size: 1.3em;
+    color: var(--orange-color);
+
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    align-items: center;
+ 
+}
+.form-group input {
+    width: 100%;
+ padding:.4em 1em;
+ border-radius:.4em;
+ -webkit-border-radius:.4em;
+ -moz-border-radius:.4em;
+ -ms-border-radius:.4em;
+ -o-border-radius:.4em;
+ border: 2px solid #8A8A8A;
+
+ 
+}
+.form-group input:focus  {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    outline:2px solid #8A8A8A;
+}
+.form-group input::placeholder{
+    font-weight: 700;
+    color: #BFBFBF;
+}
+.form-group .username{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:1em;
+}
+.form-group .username input{
+   
+
+    width: 50%;
+    }
+    .phone-number{
+        width: 100%;
+        display: flex;
+        align-items: center;
+      border: 2px solid #8A8A8A;
+      border-radius:.4em;
+    }
+    .phone-number span{
+        height: 100%;
+        border-left: 2px solid #8A8A8A;
+     
+        font-weight: 700;
+        padding-inline: 1em;
+        color: #686868;
+        cursor: pointer;
+        padding-top: .2em;
+     
+}
+.phone-number input{
+    border: none;
+}
+.ckeck-out-payment{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap:2em;
+    
+}
+.ckeck-out-payment .pay-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:.6em;
+    color: #616161;
+   
+}
+.ckeck-out-payment  .visa-card{
+  width: 100%;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  overflow: hidden;
+  background-image: url(../assets/images/visa.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 30em;
+}
+.check-out .sidebar{
+    border: 2px solid #BFBFBF;
+    padding: 2em 1em;
+    border-radius: .4em;
+    -webkit-border-radius:.4em;
+    -moz-border-radius:.4em;
+    -ms-border-radius:.4em;
+    -o-border-radius:.4em;
+    width: calc(30% - 1em);
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    height: fit-content;
+
+}
+.check-out .sidebar .header span:nth-of-type(1){
+  font-weight: 700;
+ 
+  color: var(--primary-color);
+}
+.check-out .sidebar .header span:nth-of-type(2){
+  font-weight: 700;
+ 
+  color: var(--orange-color);
+}
+.check-out .sidebar .course-info{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: #F5F5F5;
+   border-radius: .4em;
+   -webkit-border-radius: .4em;
+   -moz-border-radius: .4em;
+   -ms-border-radius: .4em;
+   -o-border-radius: .4em;
+   overflow: hidden;
+}
+.check-out .sidebar .course-info .image{
+background-image: url(../assets/images/cart-image.png);
+  background-size: cover;
+  
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 12em;
+}
+.check-out .sidebar .course-info .course-details{
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+.check-out .sidebar .course-info .course-details h3{
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.4em;
+}
+.check-out .sidebar .course-info .course-details p{
+  
+    color: #686868;
+    font-size: .8em;
+}
+.check-out .sidebar .course-info .price p{
+   font-weight: 700;
+   font-size: 1.2em;
+}
+.check-out .sidebar .check-out-review{
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+    gap: 1em;
+
+    padding: 1em;
+    color: #686868;
+}
+.check-out .sidebar .check-out-review .price-review{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.check-out .sidebar .check-out-review .price-review p{
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.check-out .sidebar .check-out-review .btn{
+    margin-top: .5em;
+    width: 100%;
+    padding:.6em 1em;
+    border: none;
+    background-color: var(--orange-color);
+    border-radius:1.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    -webkit-border-radius:1.2em;
+    -moz-border-radius:1.2em;
+    -ms-border-radius:1.2em;
+    -o-border-radius:1.2em;
+}
+.check-out .sidebar .check-out-review .btn a{
+    color: #fff;
+    font-weight: 700;
+}
+
+/*MEDIA QUIREIS */
+@media screen and (max-width: 768px) {
+ 
+   .check-out .sidebar{
+   display: none;
+ 
+   }
+   .check-out-info{
+    width: 100%;
+    margin-bottom: 1em;
+   }
+   
+}

@@ -4,14 +4,19 @@
     
     display: flex;
     align-items: flex-end;
-    gap: 2.5em;
+    gap: 2em;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+}
+.goals .section-header-container .section-header{
+    width: 50%;
 }
 .goals-container-service {
     display: flex;
     gap: 1.5em;
     margin-top: 2.5em;
+    justify-content: space-between;
 }
 .goals-container-service-faqs {
     width: 50%;
@@ -32,6 +37,7 @@
     padding-inline: 1em;
     padding-block: 1.5em;
     cursor: pointer;
+    align-items: flex-start;
 }
 
 .goals-faqs-item-header h4 {
@@ -68,6 +74,7 @@
     width: 50%;
     border-radius: 1em;
     position: relative;
+   
 }
 
 .goals-container-service-image img:nth-of-type(1):not(.goals-image) {
@@ -75,6 +82,7 @@
     left: 1em;
     top: -1.5em;
     animation: translateY 1s ease-in-out infinite alternate;
+    -webkit-animation: translateY 1s ease-in-out infinite alternate;
 }
 .goals-container-service-image img:nth-of-type(2):not(.goals-image) {
     position: absolute;
@@ -82,6 +90,7 @@
     top: 1em;
     width: 4em;
     animation: translateY 1s 1s ease-in-out infinite alternate;
+    -webkit-animation: translateY 1s 1.5s ease-in-out infinite alternate;
 }
 .goals-container-service-image img:nth-of-type(3):not(.goals-image) {
     position: absolute;
@@ -155,7 +164,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 2.5em;
+    gap: 2em;
 }
 .courses .section-header-container .section-header h2 span {
     color: var(--blue-color);
@@ -164,7 +173,7 @@
     width: 35%;
 }
 .courses .section-header-container .section-header {
-    width: 50%;
+    width: 55%;
 }
 .courses-container-cards {
     margin-top: 2.5em;
@@ -254,7 +263,7 @@
 /* start instructors  */
 .instructors .section-header-container {
     display: flex;
-    gap: 2.5em;
+    gap: 2em;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -357,10 +366,15 @@
     font-weight: 700;
     cursor: pointer;
 }
+@media (min-width: 1440px){
+    .goals-container-service-image{
+        width: 40%;
+    }
+}
 @media (max-width: 1251px) {
     .course-card,
     .instructor-card {
-        width: calc((100% - 2em) / 2);
+        width: calc((100% - 1em) / 2);
     }
 }
 

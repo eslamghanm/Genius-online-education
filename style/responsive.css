@@ -34,7 +34,7 @@ html{
     }
 }
 @media (max-width: 1024px) {
-    .container {
+    .container  {
         padding-inline: 1.22em;
     }
     html{

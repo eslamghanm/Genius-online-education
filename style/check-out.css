@@ -222,8 +222,12 @@ background-image: url(../assets/images/cart-image.png);
 @media screen and (max-width: 768px) {
  
    .check-out .sidebar{
-   display: none;
+   width: 100%;
  
+   }
+   .check-out .sidebar .course-info .image{
+   
+    height: 18em;
    }
    .check-out-info{
     width: 100%;
